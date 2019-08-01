@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="xLin&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="C++名字查找　　C++名字查找是C++编译遇到各种符号时，查找其定义的一种规则。这里的符号可以指变量或者函数，甚至是类型。而函数由于函数重载和模板变得复杂，而且还引人了ADL查找规则。因此，本文主要以函数的名字查找为例，其中部分掺杂变量与类型部分。   两大原则 OL(ordinary name lookup)普通名字查找   ADL(Argument-Dependent name lookup">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++名字查找">
+<meta property="og:url" content="http://yoursite.com/2019/07/31/C++-name-lookup/index.html">
 <meta property="og:site_name" content="xLin&#39;s Blog">
+<meta property="og:description" content="C++名字查找　　C++名字查找是C++编译遇到各种符号时，查找其定义的一种规则。这里的符号可以指变量或者函数，甚至是类型。而函数由于函数重载和模板变得复杂，而且还引人了ADL查找规则。因此，本文主要以函数的名字查找为例，其中部分掺杂变量与类型部分。   两大原则 OL(ordinary name lookup)普通名字查找   ADL(Argument-Dependent name lookup">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-08-01T14:14:05.249Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="xLin&#39;s Blog">
+<meta name="twitter:title" content="C++名字查找">
+<meta name="twitter:description" content="C++名字查找　　C++名字查找是C++编译遇到各种符号时，查找其定义的一种规则。这里的符号可以指变量或者函数，甚至是类型。而函数由于函数重载和模板变得复杂，而且还引人了ADL查找规则。因此，本文主要以函数的名字查找为例，其中部分掺杂变量与类型部分。   两大原则 OL(ordinary name lookup)普通名字查找   ADL(Argument-Dependent name lookup">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/31/C++-name-lookup/">
 
 
 
 
 
-  <title>xLin's Blog</title>
+  <title>C++名字查找 | xLin's Blog</title>
   
 
 
@@ -140,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -224,172 +227,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/01/C-scope-resolution-operator/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="xLin">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/photo.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="xLin's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/01/C-scope-resolution-operator/" itemprop="url">C++-scope-resolution-operator</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-01T16:21:08+08:00">
-                2019-08-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C-C/" itemprop="url" rel="index">
-                    <span itemprop="name">C/C++</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C-C/编译器的那些事/" itemprop="url" rel="index">
-                    <span itemprop="name">编译器的那些事</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C-C/编译器的那些事/域解析操作符/" itemprop="url" rel="index">
-                    <span itemprop="name">域解析操作符</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -419,9 +259,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/31/C++-name-lookup/" itemprop="url">C++名字查找</a></h1>
+          <h1 class="post-title" itemprop="name headline">C++名字查找</h1>
         
 
         <div class="post-meta">
@@ -515,9 +353,7 @@
       
 
       
-        
-          
-            <h1 id="C-名字查找"><a href="#C-名字查找" class="headerlink" title="C++名字查找"></a>C++名字查找</h1><p>　　C++名字查找是C++编译遇到各种符号时，查找其定义的一种规则。这里的符号可以指变量或者函数，甚至是类型。而函数由于函数重载和模板变得复杂，而且还引人了ADL查找规则。因此，本文主要以函数的名字查找为例，其中部分掺杂变量与类型部分。  </p>
+        <h1 id="C-名字查找"><a href="#C-名字查找" class="headerlink" title="C++名字查找"></a>C++名字查找</h1><p>　　C++名字查找是C++编译遇到各种符号时，查找其定义的一种规则。这里的符号可以指变量或者函数，甚至是类型。而函数由于函数重载和模板变得复杂，而且还引人了ADL查找规则。因此，本文主要以函数的名字查找为例，其中部分掺杂变量与类型部分。  </p>
 <h2 id="两大原则"><a href="#两大原则" class="headerlink" title="两大原则"></a>两大原则</h2><ul>
 <li>OL(ordinary name lookup)普通名字查找  </li>
 <li>ADL(Argument-Dependent name lookup)依赖于实参的名字查找  <h3 id="OL原则"><a href="#OL原则" class="headerlink" title="OL原则"></a>OL原则</h3>OL原则下还可细分两类：<br><strong><em>限定名字查找</em></strong><br>————要查找的符号前加了域解析操作符<br>　　只在域解析操作符限定的域空间查找对应符号；  <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">f1</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"::f1()"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> n1&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">f1</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"n1::f1()"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">namespace</span> n2&#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    ::f1();<span class="comment">//限定名字查找，直接查找全局域中的f1();</span></span><br><span class="line">    n1::f1();<span class="comment">//限定名字查找，直接查找n1域中的f1();</span></span><br><span class="line"><span class="comment">//    n1::n2::f1();//限定名字查找，n1::n2域空间中无法找到f1()，编译器报错，不向外层寻找;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -532,8 +368,6 @@
 
 <p>　　对于函数重载，也只对第一次查找到该函数名字的域空间中声明的所有函数做函数重载。</p>
 
-          
-        
       
     </div>
     
@@ -550,12 +384,28 @@
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/08/01/C-scope-resolution-operator/" rel="prev" title="C++-scope-resolution-operator">
+                C++-scope-resolution-operator <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -565,10 +415,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -576,6 +427,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -596,8 +451,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -650,6 +514,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#C-名字查找"><span class="nav-number">1.</span> <span class="nav-text">C++名字查找</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#两大原则"><span class="nav-number">1.1.</span> <span class="nav-text">两大原则</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#OL原则"><span class="nav-number">1.1.1.</span> <span class="nav-text">OL原则</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -796,6 +676,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
