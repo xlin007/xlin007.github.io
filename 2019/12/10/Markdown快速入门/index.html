@@ -87,8 +87,8 @@
 <meta property="og:description" content="Markdown快速入门字体 要创建粗体或斜体，请用星号*或下划线_括起来。 单星号或下划线斜体，双星号或下划线粗体，可叠加粗斜体。 若要避免创建粗体或斜体，请在前面或前面放置反斜杠。 星号或下划线跟文本间不能留空白。  代码: 123*Italics***Bold*****Bold&amp;amp;Italics***  效果：ItalicsBoldBold&amp;amp;Italics 段落 段落是连续的文">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2019/12/10/Markdown快速入门/cat.jpg">
-<meta property="og:image" content="http://b.org/">
-<meta property="og:updated_time" content="2019-12-12T05:24:04.857Z">
+<meta property="og:image" content="http://yoursite.com/2019/12/10/Markdown快速入门/dog.jpg">
+<meta property="og:updated_time" content="2019-12-12T05:38:46.450Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown快速入门">
 <meta name="twitter:description" content="Markdown快速入门字体 要创建粗体或斜体，请用星号*或下划线_括起来。 单星号或下划线斜体，双星号或下划线粗体，可叠加粗斜体。 若要避免创建粗体或斜体，请在前面或前面放置反斜杠。 星号或下划线跟文本间不能留空白。  代码: 123*Italics***Bold*****Bold&amp;amp;Italics***  效果：ItalicsBoldBold&amp;amp;Italics 段落 段落是连续的文">
@@ -420,7 +420,7 @@
 <li>定义标识符可以由字母、数字、空格和标点符号组成。它们不区分大小写。</li>
 </ul>
 <p><em>代码:</em></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;https://xlin007.github.io&gt;</span><br><span class="line"></span><br><span class="line">[text](http://a.com)</span><br><span class="line"></span><br><span class="line">[text][id]</span><br><span class="line">⋮</span><br><span class="line">[id]: http://b.org/ &quot;title&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;https://xlin007.github.io&gt;</span><br><span class="line"></span><br><span class="line">[text](http://a.com)</span><br><span class="line"></span><br><span class="line">[text][id0]</span><br><span class="line">⋮</span><br><span class="line">[id0]: http://b.org/ &quot;title&quot;</span><br></pre></td></tr></table></figure>
 
 <p><em>效果:</em><br><a href="https://xlin007.github.io" target="_blank" rel="noopener">https://xlin007.github.io</a></p>
 <p><a href="http://a.com" target="_blank" rel="noopener">text</a></p>
@@ -429,10 +429,10 @@
 <li>图片几乎与链接相同，但图片以感叹号开头！</li>
 </ul>
 <p><em>代码:</em></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">![alt](cat.jpg)</span><br><span class="line"></span><br><span class="line">![alt][id]</span><br><span class="line">⋮</span><br><span class="line"></span><br><span class="line">[id]: dog.jpg &quot;title&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">![alt](Markdown快速入门/cat.png)</span><br><span class="line"></span><br><span class="line">![alt][id1]</span><br><span class="line">⋮</span><br><span class="line"></span><br><span class="line">[id1]: Markdown快速入门/dog.jpg &quot;title&quot;</span><br></pre></td></tr></table></figure>
 
-<p><em>效果:</em><br><img src="cat.jpg" alt="alt">  </p>
-<p><img src="http://b.org/" alt="alt" title="title"><br>⋮</p>
+<p><em>效果:</em><br><img src="/2019/12/10/Markdown快速入门/cat.jpg" alt="alt"></p>
+<p><img src="/2019/12/10/Markdown快速入门/dog.jpg" alt="alt" title="title"><br>⋮</p>
 <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><ul>
 <li>若要创建内联代码，请使用反单引号`进行包装。</li>
 <li>若要创建代码块，请将每行缩进4个空格，或在代码块上下的一行上放置3个反单引号```。</li>
